@@ -1,0 +1,46 @@
+<div class="card text-dark mb-3 card__style">
+  <div class="card-header">Add Project</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-xs-12">
+        <form class="form-horizontal">
+          <div class="form-group mb-3">
+            <label for="name" class="control-label label__style">Name</label>
+            <input type="text" id="name" class="form-control form-control-sm" #projectNameInput />
+          </div>
+          <div class="form-group mb-3">
+            <label for="version" class="control-label label__style">Version</label>
+            <input type="text" id="version" class="form-control form-control-sm" #projectVersionInput />
+          </div>
+          <div class="form-group mb-3">
+            <label for="group" class="control-label label__style">Group</label>
+            <input type="text" id="group" class="form-control form-control-sm" #projectGroupInput />
+          </div>
+          <div class="form-group mb-3">
+
+            <label for="type" class="control-label label__style">Type</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="typeselection" id="url" value="url" [defaultChecked]/>
+              <label class="form-check-label" for="url">URL</label>
+
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="typeselection" id="binaryfile" value="binaryfile">
+              <label class="form-check-label" for="binaryfile">Binary File</label>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="url" class="control-label label__style">URL</label>
+            <input type="text" id="url" class="form-control form-control-sm" #projectUrlInput />
+          </div>
+          <div class="form-group mb-3">
+            <label for="instructions" class="control-label label__style">Instructions</label>
+            <textarea class="form-control" #projectInstructionsInput></textarea>
+          </div>
+          <button class="btn btn-sm btn-danger" type="button" (click)="onAddedProject()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

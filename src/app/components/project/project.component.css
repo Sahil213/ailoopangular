@@ -1,0 +1,10 @@
+.card__style{
+  margin: 4rem auto 4rem auto;
+  width: 20rem;
+}
+
+.label__style{
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
